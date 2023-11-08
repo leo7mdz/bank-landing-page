@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .clip-path-close {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .clip-path-open {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
+}
+
+.degradeBlue {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 5px 0;
+}
