@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="p-4 max-w-6xl">
+    <div className="p-4 max-w-6xl w-full mx-auto">
       <section>
         <div>
           <h1 className="text-4xl font-semibold">
