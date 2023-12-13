@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import dataNav from "./header-data";
 import Image from "next/image";
 import { FaBarsStaggered } from "react-icons/fa6";
+import TransitionFadeIn from "@/app/components/TransitionFadeIn";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -13,7 +14,7 @@ const Header = () => {
     setOpen(!open);
   };
   return (
-    <>
+    <TransitionFadeIn>
       <header className="relative max-w-6xl w-full mx-auto flex items-center justify-between p-4">
         <Link href="/" className="md:pt-3">
           <Image
@@ -38,7 +39,7 @@ const Header = () => {
         </nav>
         <FaBarsStaggered className="text-2xl md:hidden" onClick={handleClick} />
       </header>
-    </>
+    </TransitionFadeIn>
   );
 };
 
