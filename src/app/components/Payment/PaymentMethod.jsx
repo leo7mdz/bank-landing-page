@@ -32,6 +32,7 @@ const PaymentMethod = () => {
               >
                 <Image
                   src={`/assets/${image}`}
+                  alt={`image-${id}`}
                   width={70}
                   height={70}
                   className="h-[60px] w-[120px] object-contain"
