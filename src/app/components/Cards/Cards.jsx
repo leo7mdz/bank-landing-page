@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Cards = () => {
   return (
-    <div className=" p-4 max-w-6xl w-full mx-auto ">
-      <h1 className="text-3xl font-semibold pb-10 md:grid md:grid-cols-2">
+    <div className=" p-4 max-w-6xl w-full mx-auto md:grid md:grid-cols-2">
+      <h1 className="text-3xl font-semibold pb-10 ">
         Elige la tarjeta que mas
         <span className="block bg-blueLight degradeBlue">
           se adapte a tus necesidades
