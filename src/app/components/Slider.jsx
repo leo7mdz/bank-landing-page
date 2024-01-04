@@ -22,33 +22,33 @@ export const Slider = () => {
       pagination={{
         clickable: true,
       }}
-      cssMode={true}
+      /*  cssMode={true}
       navigation={true}
       mousewheel={true}
-      keyboard={true}
+      keyboard={true} */
       modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-      className=" w-full md:max-w-5xl mySwiper"
+      className="h-[250px] w-full md:max-w-5xl "
     >
       {dataTestimonials.map(({ id, name, testimonial, work, image }) => (
-        <SwiperSlide key={id} className="my-14 md:px-10 ">
+        <SwiperSlide key={id} className="my-5 md:px-10 ">
           <Image
             src="/assets/testimonial-icon.png"
-            alt="Comillas"
-            width={30}
-            height={30}
-            className="w-auto h-auto"
+            alt="Testimonial"
+            width={50}
+            height={50}
+            className="w-auto h-auto red"
           />
           <p className="my-5">{testimonial}</p>
-          <div className="flex">
+          <div className="flex justify-center gap-x-3">
             <Image
               src={image}
               alt={name}
               width="50"
               height={50}
-              className="mr-5 rounded-full object-contain"
+              className="rounded-full "
             />
             <div>
-              <h5 className="">{name}</h5>
+              <h5 className="text-center">{name}</h5>
               <p className="text-primaryDark">{work}</p>
             </div>
           </div>
