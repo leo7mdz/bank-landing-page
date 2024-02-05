@@ -21,13 +21,13 @@ const TransitionX = (props) => {
     <div ref={ref} className="relative overflow-hidden w-fit">
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 75, x: -100 },
+          hidden: { opacity: 0, y: 0, x: -100 },
           visible: { opacity: 1, y: 0, x: 0 },
         }}
         initial="hidden"
         animate={mainControls}
         exit="hidden"
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.9, delay: 0.5 }}
       >
         {children}
       </motion.div>

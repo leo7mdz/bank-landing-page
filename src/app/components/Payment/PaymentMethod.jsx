@@ -7,7 +7,7 @@ import ArticlePayment from "../ArticlePayment";
 
 const PaymentMethod = () => {
   return (
-    <div className="p-4 relative py-20 md:py-48">
+    <div className="p-4 relative mx-auto py-20 md:py-48">
       <div className="relative w-full overflow-hidden">
         <Swiper
           breakpoints={{

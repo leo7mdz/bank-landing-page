@@ -27,7 +27,7 @@ export const Slider = () => {
       mousewheel={true}
       keyboard={true} */
       modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-      className="h-[250px] w-full md:max-w-5xl "
+      className="h-[250px] w-full md:max-w-5xl overflow-hidden "
     >
       {dataTestimonials.map(({ id, name, testimonial, work, image }) => (
         <SwiperSlide key={id} className="my-5 md:px-10 ">

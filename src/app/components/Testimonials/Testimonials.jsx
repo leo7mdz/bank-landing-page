@@ -4,7 +4,7 @@ import { Slider } from "../Slider";
 
 const Testimonials = () => {
   return (
-    <div className="p-8 realtive md:py-44 text-center">
+    <div className="p-8 mx-auto w-full realtive py-20 md:py-44 text-center">
       <h1 className="text-5xl mb-5 font-semibold">
         Que dicen los clientes de nosotros
       </h1>
